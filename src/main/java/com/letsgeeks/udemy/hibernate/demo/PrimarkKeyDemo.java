@@ -18,9 +18,8 @@ public class PrimarkKeyDemo {
             // use the session object
             System.out.println("Creating 3 new student object..");
             // create a student object
-            Student tempStudent = new Student("Chaitu", "Yeluri", "cyeluri@gmail.com");
-            Student tempStudent2 = new Student("Shourya", "Yeluri", "adith@gmail.com");
-            Student tempStudent3 = new Student("Kavitha", "Tallapaneni", "tkavitha@gmail.com");
+            Student tempStudent = new Student("Chaitu", "Yeluri", "cyeluri1@gmail.com");
+            Student tempStudent2 = new Student("Shourya", "Yeluri", "adith1@gmail.com");
 
             // start a transaction
             session.beginTransaction();
