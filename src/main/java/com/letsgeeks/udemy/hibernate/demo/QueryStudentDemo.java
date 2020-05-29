@@ -1,6 +1,8 @@
 package com.letsgeeks.udemy.hibernate.demo;
 
 import com.letsgeeks.udemy.hibernate.entity.Student;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
@@ -9,6 +11,7 @@ import java.util.List;
 
 
 public class QueryStudentDemo {
+    private static final Logger logger = LogManager.getLogger(QueryStudentDemo.class);
     public static void main(String args[]){
         //create sessionfactory
         SessionFactory factory = new Configuration()
@@ -44,6 +47,11 @@ public class QueryStudentDemo {
         }catch (Exception exc) {
             exc.printStackTrace();
         }finally {
+            logger.debug("This is a debug message");
+            logger.info("This is an info message");
+            logger.warn("This is a warn message");
+            logger.error("This is an error message");
+            logger.fatal("This is a fatal message");
             factory.close();
         }
 

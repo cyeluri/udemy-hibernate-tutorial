@@ -27,7 +27,6 @@ public class PrimarkKeyDemo {
             System.out.println("Saving the  new student objects..");
             session.save(tempStudent);
             session.save(tempStudent2);
-            session.save(tempStudent3);
             // commit the transaction
             session.getTransaction().commit();
         }catch (Exception exc) {
